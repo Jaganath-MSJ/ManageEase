@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: managease-backend
+  labels:
+    app: managease-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: managease-backend
+  template:
+    metadata:
+      labels:
+        app: managease-backend
+    spec:
+      containers:
+      - name: backend
+        image: managease/backend:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: managease-secrets
+              key: mongodb-uri
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: managease-secrets
+              key: jwt-secret
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds:# ManageEase - Full Stack User & Task Management Application

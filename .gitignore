@@ -1,0 +1,266 @@
+# ====================
+# GENERAL
+# ====================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# ====================
+# BACKEND (Node.js/Express)
+# ====================
+
+# Dependencies
+backend/node_modules/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/lerna-debug.log*
+
+# Runtime data
+backend/pids/
+backend/*.pid
+backend/*.seed
+backend/*.pid.lock
+
+# Coverage directory used by tools like istanbul
+backend/coverage/
+backend/.nyc_output/
+
+# Grunt intermediate storage
+backend/.grunt/
+
+# Bower dependency directory
+backend/bower_components/
+
+# node-waf configuration
+backend/.lock-wscript
+
+# Compiled binary addons
+backend/build/Release/
+
+# Dependency directories
+backend/jspm_packages/
+
+# TypeScript cache
+backend/*.tsbuildinfo
+
+# Optional npm cache directory
+backend/.npm/
+
+# Optional eslint cache
+backend/.eslintcache
+
+# Microbundle cache
+backend/.rpt2_cache/
+backend/.rts2_cache_cjs/
+backend/.rts2_cache_es/
+backend/.rts2_cache_umd/
+
+# Optional REPL history
+backend/.node_repl_history
+
+# Output of 'npm pack'
+backend/*.tgz
+
+# Yarn Integrity file
+backend/.yarn-integrity
+
+# Environment variables
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.test
+backend/.env.production
+backend/.env.*.local
+
+# parcel-bundler cache
+backend/.cache/
+backend/.parcel-cache/
+
+# Next.js build output
+backend/.next/
+
+# Nuxt.js build / generate output
+backend/.nuxt/
+backend/dist/
+
+# Gatsby files
+backend/.cache/
+backend/public/
+
+# Storybook build outputs
+backend/.out/
+backend/.storybook-out/
+
+# Temporary folders
+backend/tmp/
+backend/temp/
+
+# Logs
+backend/logs/
+backend/*.log
+
+# Database
+backend/*.sqlite
+backend/*.sqlite3
+backend/*.db
+
+# Upload directories
+backend/uploads/
+backend/public/uploads/
+
+# JWT keys
+backend/private.key
+backend/public.key
+
+# ====================
+# FRONTEND (React/Vite)
+# ====================
+
+# Dependencies
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# Build outputs
+frontend/dist/
+frontend/dist-ssr/
+frontend/build/
+frontend/out/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.test
+frontend/.env.production
+frontend/.env.*.local
+
+# Vite
+frontend/.vite/
+
+# Editor directories and files
+frontend/.vscode/*
+frontend/!.vscode/extensions.json
+frontend/.idea/
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# ESLint cache
+frontend/.eslintcache
+
+# Stylelint cache
+frontend/.stylelintcache
+
+# Coverage directory used by tools like istanbul
+frontend/coverage/
+frontend/.nyc_output/
+
+# TypeScript cache
+frontend/*.tsbuildinfo
+
+# Optional npm cache directory
+frontend/.npm/
+
+# Optional eslint cache
+frontend/.eslintcache
+
+# Storybook build outputs
+frontend/.out/
+frontend/.storybook-out/
+frontend/storybook-static/
+
+# Testing
+frontend/__tests__/coverage/
+
+# ====================
+# SHARED/ROOT LEVEL
+# ====================
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Documentation build
+docs/build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# ====================
+# PROJECT SPECIFIC
+# ====================
+
+# Config files (keep templates, ignore actual configs)
+config.json
+config.js
+!config.example.json
+!config.example.js
+
+# Seeds and test data
+backend/seeds/test-data/
+frontend/public/test-images/
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.cert
+
+# Database dumps
+*.sql
+*.dump
+
+# Email templates (if sensitive)
+backend/templates/emails/sensitive/
+
+# API documentation build
+api-docs/build/
